@@ -10,7 +10,7 @@ pub fn camera_control_system(
     key: Res<Input<KeyCode>>,
     mouse_input: Res<Input<MouseButton>>,
 ) {
-    let settings_sensitivity = 0.1;
+    let settings_sensitivity = 0.01;
     let mut rotation_move = Vec2::ZERO;
     let mut camera = query.get_single_mut().unwrap();
 
